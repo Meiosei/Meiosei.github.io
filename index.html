@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <link href="form.css" rel="stylesheet" type="text/css" />
+
+  <link href="footer.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <body>
+    <header>
+      <div id="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+
+      <div id="cabecalho">
+        <p>Locação de Impressoras</p>
+        <p>Suporte Técnico</p>
+        <p>Serviços de Gráfica Rápida</p>
+      </div>
+
+
+    </header>
+
+    <main>
+      <h2>Chamado Técnico</h2>
+      <div id="container">
+        <form id="form" action="" Técnico" method="POST">
+
+
+          <fieldset id="fieldInfoCli">
+            <legend>Informações do Cliente</legend>
+            <label for="cliente">Cliente:</label>
+            <input type="text" id="cliente" name="cliente">
+
+
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereço">
+
+            <label for="numero">N°:</label>
+            <input type="text" id="numero" name="n" key="número">
+
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro">
+
+            <label for="sala">Sala:</label>
+            <input type="text" id="sala" name="sala">
+
+            <label for="andar">Andar:</label>
+            <input type="text" id="andar" name="andar">
+
+
+
+            <label for="fone">Fone:</label>
+            <input type="tel" id="fone" name="fone">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="whatsapp">Whatsapp:</label>
+            <input type="tel" id="whatsapp" name="whatsapp">
+
+
+
+
+
+
+          </fieldset>
+
+
+          <fieldset id="formInfoImp">
+            <legend>Informações da Impressora</legend>
+            <p>
+              <label for="kyocera">Kyocera:</label>
+              <input id="kyocera" name="modelPrint" type="radio" value="kyocera">
+            </p>
+            <p>
+              <label for="brother">Brother:</label>
+              <input id="brother" name="modelPrint" type="radio" value="brother">
+            </p>
+            <p>
+              <label for="ricoh">Ricoh:</label>
+              <input id="ricoh" name="modelPrint" type="radio" value="ricoh">
+            </p>
+            <p>
+              <label for="samsung">Samsung:</label>
+              <input id="samsung" name="modelPrint" type="radio" value="samsung">
+            </p>
+            <p>
+              <label for="minolta">Minolta:</label>
+              <input id="minolta" name="modelPrint" type="radio" value="minolta">
+            </p>
+            <p>
+              <label for="epson">Epson:</label>
+              <input id="epson" name="modelPrint" type="radio" value="epson">
+            </p>
+            <p>
+              <label for="outrosModel">Outros:</label>
+              <input id="outrosModel" name="modelPrint" type="radio" value="outrosModel">
+            </p>
+
+            <p class="text-box"> <label for="modelo"">Modelo:</label>
+              <input type=" text" id="modelo" name="modelo">
+            </p>
+            <p class="text-box">
+              <label for="nSerie"">N° Série:</label>
+              <input type=" text" id="nSerie" name="nSerie">
+            </p>
+
+            <p>
+              <label for="infoPlocacao">Locação:</label>
+              <input id="infoPlocacao" name="typeService" type="radio" value="locacao">
+            </p>
+            <p>
+              <label for="infoPcontrato">Contrato:</label>
+              <input id="infoPcontrato" name="typeService" type="radio" value="contrato">
+            </p>
+            <p>
+              <label for="infoPatendimento">Atendimento:</label>
+              <input id="infoPatendimento" name="typeService" type="radio" value="atendimento">
+            </p>
+            <p>
+              <label for="infoPoutros">Outros:</label>
+              <input id="infoPoutros" name="typeService" type="radio" value="outros">
+            </p>
+
+          </fieldset>
+
+
+          <fieldset id="formDetCham"">
+            <legend>Detalhes do Chamado</legend>
+            <p>
+              <label for=" serviceDescriptionCorretiva">Manutenção Corretiva:</label>
+            <input id="serviceDescriptionCorretiva" name="serviceDescription" type="checkbox"
+              value="Manutenção Corretiva">
+            </p>
+            <p>
+              <label for="serviceDescriptionPreventiva">Manutenção Preventiva:</label>
+              <input id="serviceDescriptionPreventiva" name="serviceDescription" type="checkbox"
+                value="Manutenção Preventiva">
+            </p>
+            <p>
+              <label for="serviceDescriptionTecnico">Serviço Técnico:</label>
+              <input id="serviceDescriptionTecnico" name="serviceDescription" type="checkbox" value="Serviço Técnico">
+            </p>
+            <p>
+              <label for="serviceDescriptionInstalacao">Instalação de Programa:</label>
+              <input id="serviceDescriptionInstalacao" name="serviceDescription" type="checkbox"
+                value="Instalação de Programa">
+            </p>
+            <p>
+              <label for="serviceDescriptionSuprimentos">Suprimentos:</label>
+              <input id="serviceDescriptionSuprimentos" name="serviceDescription" type="checkbox" value="Suprimentos">
+            </p>
+            <p>
+              <label for="serviceDescriptionOutros">Outros:</label>
+              <input id="serviceDescriptionOutros" name="serviceDescription" type="checkbox" value="outros">
+            </p>
+
+            <p id="descricao">
+              <label for="description">Descrição:</label>
+              <textarea id="description" name="description" rows="10" cols="30"
+                placeholder="Digite sua descrição aqui..."></textarea>
+            </p>
+
+          </fieldset>
+
+
+          <fieldset id="horarios">
+            <legend>Horário de Atendimento</legend>
+
+            <p>
+              <label for="horaIn">Horário de Incial:</label>
+              <input type="time" id="horaIn" name="horaIn">
+            </p>
+
+
+            <p>
+              <label for="horaFin">Horário de Final:</label>
+              <input type="time" id="horaFin" name="horaFin">
+            </p>
+
+
+          </fieldset>
+
+
+          <fieldset id="receber">
+
+            <label for=" valor">Valor à receber:</label>
+            <input type="text" id="valor" name="valor">
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data">
+
+          </fieldset>
+
+
+          <fieldset id="formEquip">
+            <legend>Estado do Equipamento</legend>
+
+            <p>
+              <label for="statusOk">OK:</label>
+              <input id="statusOk" name="status" type="radio" value="ok">
+            </p>
+            <p>
+              <label for="statusFuncionando">Funcionando:</label>
+              <input id="statusFuncionando" name="status" type="radio" value="funcionando">
+            </p>
+            <p>
+              <label for="statusAguardandoPeca">Aguardando Peça:</label>
+              <input id="statusAguardandoPeca" name="status" type="radio" value="aguardando_peca">
+            </p>
+            <p>
+              <label for="statusParado">Parado:</label>
+              <input id="statusParado" name="status" type="radio" value="parado">
+            </p>
+            <p>
+              <label for="statusTroca">Troca:</label>
+              <input id="statusTroca" name="status" type="radio" value="troca">
+            </p>
+            <p>
+              <label for="statusRetirada">Retirada:</label>
+              <input id="statusRetirada" name="status" type="radio" value="retirada">
+            </p>
+          </fieldset>
+
+
+          <fieldset id="contadores">
+
+            <legend>Contadores</legend>
+
+
+            <label for="contScan">Contador Scanner:</label>
+            <input type="number" id="contScan" name="contScan">
+
+            <label for="contImp">Contador Cópia/Impressão:</label>
+            <input type="number" id="contImp" name="contImp">
+
+
+          </fieldset>
+
+
+          <div id="assinatura">
+            <h2>Assinaturas</h2>
+
+            <p>
+              <label for="clienteAssin"> Cliente</label>
+              <input type="text" id="clienteAssin" name="clienteAssin">
+            </p>
+
+            <p>
+              <label for="tecAssin"> Técnico</label>
+              <input type="text" id="tecAssin" name="tecAssin">
+            </p>
+          </div>
+
+
+          <input id="submit" type="submit" value="Enviar" onclick="generatePDF()">
+        </form>
+      </div>
+
+    </main>
+
+
+
+    <footer>
+      <h3>Contatos:</h3>
+      <p>E-mail: souzakrscopiadoras@outlook.com</p>
+      <p>Whatsapp: (85) 9.8652-5594</p>
+      <p>(85) 9.8758-3721</p>
+    </footer>
+
+
+
+    <script type="module" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+  </body>
+
+</html>
