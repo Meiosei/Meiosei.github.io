@@ -1,0 +1,243 @@
+@import url(style.css);
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--margin-external);
+  margin-top: 0px;
+
+
+}
+
+main label {
+  margin-top: 5px;
+  color: var(--color-label);
+  font-weight: 500;
+}
+
+input {
+  background-color: var(--input-color);
+}
+
+#container form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100%;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+#container form #submit {
+  background-color: var(--bottom-color);
+  height: 100%;
+  width: 75%;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+#container form #submit:active {
+  background-color: var(--input-checked);
+  animation-delay: 2s;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+  border-color: #808080;
+  width: 90%;
+  gap: 5px;
+}
+
+fieldset legend {
+  font-weight: 1000;
+}
+
+#formInfoImp {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#formInfoImp>p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  gap: 5px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+#formInfoImp>p>label {
+  margin-top: 0px;
+}
+
+#formInfoImp>p.text-box {
+  width: 100%;
+}
+
+#formInfoImp>p>#modelo,
+#nSerie {
+  width: 60%;
+
+}
+
+#formDetCham {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+
+}
+
+#formDetCham>p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 60vw;
+  gap: 5px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+#formDetCham>#descricao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#formDetCham>#descricao>label {
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 60vw;
+  gap: 5px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+#formDetCham>#descricao>textarea {
+  background-color: var(--input-color);
+  border: 1px black solid;
+}
+
+
+#formDetCham>p>label {
+  margin-top: 0px;
+}
+
+#formEquip {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+
+}
+
+#formEquip>p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 60vw;
+  gap: 5px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+#contadores {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+
+}
+
+#contadores>p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 60vw;
+  gap: 5px;
+  margin: 0px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+#contadores>p>#contScan {
+  align-items: flex-start;
+  width: 100%;
+  gap: 5px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+
+#contadores>p>#contImp {
+  align-items: flex-start;
+  width: 100%;
+  gap: 5px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+
+#contadores>p>label {
+  align-items: flex-start;
+  margin-top: 5px;
+}
+
+#assinatura {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-between;
+  text-align: center;
+  width: 60vw;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+#assinatura h2 {
+  margin: 0px;
+}
+
+#assinatura>p {
+  align-items: flex-start;
+  width: 100%;
+  gap: 5px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+#assinatura>p>#clienteAssin {
+  align-items: flex-start;
+  width: 96%;
+  gap: 5px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+#assinatura>p #tecAssin {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 96%;
+  margin: 0px;
+}

@@ -1,0 +1,21 @@
+@import url('style.css');
+
+footer {
+  display: flex;
+  flex-direction: column;
+  position: flex-end;
+  padding-bottom: 5px;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--color-footer);
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer>h3 {
+  margin: 0px;
+}
+
+footer>p {
+  margin: 0px;
+}
